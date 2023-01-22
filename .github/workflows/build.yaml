@@ -18,3 +18,11 @@ jobs:
           outputFilePath: azure/marketplace/azureDeploy.json
       - name: Add new template
         run: git add azure/marketplace/azureDeploy.json
+      - name: Commit the template
+        uses: swinton/commit@v2.0.0
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          files: |
+            azure/marketplace/azureDeploy.json
+          commit-message: "Commiting new template"
