@@ -25,4 +25,4 @@ jobs:
         with:
           files: |
             azure/marketplace/azureDeploy.json
-          commit-message: "Commiting new template"
+          commit-message: "Commiting new templates"
