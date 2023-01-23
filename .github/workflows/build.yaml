@@ -18,7 +18,7 @@ jobs:
           outputFilePath: azure/marketplace/azureDeploy.json
       - name: Add new template
         run: git add azure/marketplace/azureDeploy.json
-      - name: Commit the template
+      - name: Commit the templates
         uses: EndBug/add-and-commit@v9
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
